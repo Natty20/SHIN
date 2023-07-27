@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* similarity */
+
+.presantation h1,
+.unique-titre h1,
+.engagement-textes h2,
+.organisation h2,
+.organisation span,
+.devis button:hover,
+.liste-paragraphs span {
+    color: #29ABB7;
+}
+
+.presantation h1,
+.unique-titre h1,
+.devis h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.presantation-,
+.devis-textes,
+.devis button,
+.presantation-cards,
+.liste-btn button:hover {
+    color: white;
+}
+
+/* presantation section */
+
+.presantation, 
+.unique, 
+.unique-titre{
+    margin: 5rem;
+}
+
+.presantation h1, 
+.unique-titre h1{
+    font-weight: lighter;
+}
+
+.presantation h1{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.presantation-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.australie, 
+.tanzanie, 
+.maldives, 
+.thailande{
+    height: 28rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.australie:hover,
+.tanzanie:hover,
+.maldives:hover,
+.thailande:hover {
+    transition: 0.5s ease-out;
+    transform: scale(1.1);
+}
+.australie{
+    background-image: url('/images/un.jpg');
+}
+.maldives{
+    background-image: url('/images/maldives.jpg');
+}
+.tanzanie{
+    background-image: url('/images/tanzanie.jpg');
+}
+.thailande{
+    background-image: url('/images/thailande.jpg');
+}
+
+.presantation-cards h2, .presantation-cards p, .rates {
+    margin: 0.5rem;
+}
+
+.presantation-cards h2{
+    padding-top: 20rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+
+/* unique section */
+.unique{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.unique-titre h1, .unique-titre p{
+    text-align: center;
+    margin: 0.3rem;
+}
+
+.engagement-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0rem 0rem 3.5rem 3rem;
+}
+
+.engagement-textes{
+    margin: 0rem 0rem 0rem -6rem;
+}
+.engagement-textes h2{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+}
+
+.organisation h2{
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.organisation span{
+    text-decoration: underline;
+    padding: 1rem 0 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+/* devis */
+
+.devis{
+    display: flex;
+    margin-top: 6rem;
+}
+
+.devis-textes{
+    background-color: #29ABB7;
+    width: 100%;
+    /* height: 30rem; */
+    border-radius: 0 0 10px 0;
+}
+
+.devis img{
+    width: 130%;
+    border: 4px solid white;
+    border-radius: 0.5rem;
+    margin: -6rem 0 0 -10rem;
+}
+
+.circles{
+    margin: -7rem;
+}
+
+.devis h1{
+    padding: 3rem 15rem 0 0;
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-style: italic;
+    
+}
+
+.devis p {
+    padding: 1rem 15rem 0 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+
+}
+
+.devis-textes{
+    padding: 4.5rem;
+}
+
+.devis button{
+    padding: 1rem;
+    width: 15rem;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4rem;
+    margin: 2rem 0 1.5rem 0;
+    cursor: pointer;
+}
+
+.devis button:hover {
+    background-color:white;
+}
+
+/* liste */
+
+.liste{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.liste img{
+    width: 20%;
+}
+.liste-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+    margin: 3rem;
+}
+
+.liste-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.liste-cards svg:hover, .engagement svg:hover {
+    transition: 0.5s ease-out;
+    transform: scale(1.1);
+}
+
+.liste-paragraphs{
+    margin: 1.5rem 0 0 -1.5rem;
+}
+
+.liste-paragraphs span{
+    font-weight: bold;
+}
+
+.liste-paragraphs p{
+    font-size: 15px;
+}
+
+.liste-btn{
+    text-align: center;
+    margin: 2rem;
+}
+
+.liste-btn button{
+    padding: 0.6rem;
+    background-color: transparent;
+    border: 2px solid #29ABB7;
+    border-radius: 10rem;
+    width: 15rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.liste-btn button:hover {
+    background-color:#29ABB7;
+}
+
+
+
+/* responsive */
+
+@media only screen and (min-width: 640px) and (max-width:768px) {
+    /* presantation section */
+    
+        .presantation,
+        .unique,
+        .unique-titre {
+            margin: 3rem;
+        }
+    
+        .presantation h1,
+        .unique-titre h1 {
+            font-size: 1.6rem;
+        }
+    
+        .presantation-cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* unique section */
+        .unique {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        /* devis */
+    
+        .devis {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 3rem;
+        }
+    
+        .devis-textes {
+            width: auto;
+        }
+    
+        .devis img {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 0px;
+            margin: 0;
+        }
+    
+        .circles {
+            margin: 0;
+            visibility: hidden;
+        }
+    
+        .devis h1 {
+            padding: 6rem 0 0 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+    
+        }
+    
+        .devis p {
+            padding: 1rem 0 0 0;
+            font-size: 15px;    
+        }
+    
+        .devis-textes {
+            padding: 1rem;
+        }
+
+        /* liste */
+    
+        .liste img {
+            width: 25%;
+        }
+    
+        .liste-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 5rem;
+        }
+    
+        .liste-paragraphs {
+            margin: 2rem 0 0 -6rem;
+        }
+}
